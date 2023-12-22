@@ -1,0 +1,165 @@
+.about-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 100%;
+
+    padding: 80px;  
+    box-sizing: border-box;
+
+    .about-title-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-bottom: 40px;
+
+        .about-title-logo{
+            width: 100px;
+            height: 85px;
+
+            margin-bottom: 5px;
+         
+            background-image: url('../../images/logo_kb_bw.svg');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        span{
+            font-family: 'Seaweed Script', cursive;
+            font-size: 50px;
+            
+        }
+    }
+
+    .about-content-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 25px;
+        
+        .about-content-block{
+            position: relative;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            .about-img{
+                position: relative;
+                z-index: 2;
+
+                width: 300px;
+                height: 300px;
+            }
+
+            .art-ellipse-green{
+                background-image: url('../../images/ellipse_green.svg');
+            }
+            .art-ellipse-blue{
+                background-image: url('../../images/ellipse_blue.svg');
+            }
+            .art-rectangle-green{
+                background-image: url('../../images/rectangle_green.svg');
+            }
+            .art-rectangle-blue{
+                background-image: url('../../images/rectangle_blue.svg');
+            }
+
+            .about-img-art{
+                position: absolute;
+            }
+
+            .about-img-1{
+                background-image: url('../../images/about_img_1.jpg');
+            }
+            .block1--img-art-topright{
+                width: 140px;
+                height: 140px;
+
+                top: -70px;
+                right: -70px;
+            }
+            .block1--img-art-top{
+                width: 100px;
+                height: 60px;
+                
+                top: -15px;
+                left: 60px;
+            }
+            .block1--img-art-btm-left{
+                width: 255px;
+                height: 255px;
+                
+                bottom: -15px;
+                left: -15px;
+            }
+
+            .about-img-2{
+                background-image: url('../../images/about_img_2.jpg');
+            }
+            .block2--img-art-left{
+                width: 140px;
+                height: 140px;
+                
+                left: -40px;
+                bottom: 5px;
+            }
+            .block2--img-art-top{
+                width: 100px;
+                height: 60px;
+                
+                top: -15px;
+                right: 60px;    
+            }
+            .block2--img-art-btm-right{
+                width: 255px;
+                height: 255px;
+
+                right: -15px;
+                bottom: -15px;
+            }
+
+            .about-img-3{
+                background-image: url('../../images/about_img_3.jpg');
+            }
+            .block3--img-art-left{
+                width: 140px;
+                height: 140px;
+                
+                left: -40px;
+                bottom: 5px;
+            }
+            .block3--img-art-top-btm{
+                width: 255px;
+                height: 330px;
+                
+                top: -15px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+
+
+            h3,p{ 
+                margin: 0;
+                padding: 0;
+                
+                font-family: 'Unna', serif;
+            }
+            h3{ 
+                margin-bottom: 10px;
+                font-size: 30px;
+                font-weight: normal;
+
+            }
+            p{  
+                width: 205px;
+
+                font-size: 18px;
+                text-align: justify;
+            }
+        }
+    }
+}

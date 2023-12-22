@@ -16,6 +16,11 @@ html,body{
     src: url('../fonts/Zeyada-Regular.ttf');
     font-weight: normal;
 }
+@font-face {
+    font-family: 'Seaweed Script';
+    src: url('../fonts/SeaweedScript-Regular.ttf');
+    font-weight: normal;
+}
 
 @font-face {
     font-family: 'Open Sans';
