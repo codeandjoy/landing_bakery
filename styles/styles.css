@@ -15,11 +15,17 @@ html,body{
 .art-ellipse-blue{
     background-image: url('../../images/ellipse_blue.svg');
 }
+.art-ellipse-red{
+    background-image: url('../../images/ellipse_red.svg');
+}
 .art-rectangle-green{
     background-image: url('../../images/rectangle_green.svg');
 }
 .art-rectangle-blue{
     background-image: url('../../images/rectangle_blue.svg');
+}
+.art-rectangle-red{
+    background-image: url('../../images/rectangle_red.svg');
 }
 
 /* Fonts */
