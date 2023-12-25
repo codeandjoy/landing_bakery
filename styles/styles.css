@@ -9,6 +9,19 @@ html,body{
     border-color: red;
 }
 
+.art-ellipse-green{
+    background-image: url('../../images/ellipse_green.svg');
+}
+.art-ellipse-blue{
+    background-image: url('../../images/ellipse_blue.svg');
+}
+.art-rectangle-green{
+    background-image: url('../../images/rectangle_green.svg');
+}
+.art-rectangle-blue{
+    background-image: url('../../images/rectangle_blue.svg');
+}
+
 /* Fonts */
 
 @font-face {

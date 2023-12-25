@@ -43,18 +43,6 @@
   width: 300px;
   height: 300px;
 }
-.about-section .about-content-container .about-content-block .art-ellipse-green {
-  background-image: url("../../images/ellipse_green.svg");
-}
-.about-section .about-content-container .about-content-block .art-ellipse-blue {
-  background-image: url("../../images/ellipse_blue.svg");
-}
-.about-section .about-content-container .about-content-block .art-rectangle-green {
-  background-image: url("../../images/rectangle_green.svg");
-}
-.about-section .about-content-container .about-content-block .art-rectangle-blue {
-  background-image: url("../../images/rectangle_blue.svg");
-}
 .about-section .about-content-container .about-content-block .about-img-art {
   position: absolute;
 }
