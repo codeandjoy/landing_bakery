@@ -1,0 +1,68 @@
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+}
+.menu-section .menu-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.menu-section .menu-title-container .menu-title-logo {
+  width: 100px;
+  height: 85px;
+  margin-bottom: 5px;
+  background-image: url("../../images/logo_kb.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.menu-section .menu-title-container span {
+  color: #FFF;
+  font-family: "Seaweed Script", cursive;
+  font-size: 50px;
+}
+.menu-section .menu-items-container {
+  display: flex;
+  gap: 150px;
+}
+.menu-section .menu-items-container .menu-block .menu-block-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 150px;
+  background-image: url("../../images/chalk.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.menu-section .menu-items-container .menu-block .menu-block-title span {
+  margin-bottom: 10px;
+  font-family: "Unna", serif;
+  font-size: 40px;
+  color: #fff;
+}
+.menu-section .menu-items-container .menu-block .menu-block-listing {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.menu-section .menu-items-container .menu-block .menu-block-listing .entry {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-section .menu-items-container .menu-block .menu-block-listing .entry div span {
+  color: #fff;
+  font-family: "Unna", serif;
+  font-size: 24px;
+}
+.menu-section .menu-items-container .menu-block--mg {
+  margin-top: -110px;
+}/*# sourceMappingURL=menu.css.map */
