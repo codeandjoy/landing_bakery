@@ -1,0 +1,61 @@
+.visit-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 130px;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: url('../../images/visit_img.jpg');
+    background-size: cover;
+
+    .visit-section-logo{
+        width: 340px;
+        height: 290px;
+        
+        margin-bottom: 72px;
+
+        background-image: url('../../images/logo_kb.svg');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .visit-section-content-container{
+        position: relative;
+
+        color: #fff;
+
+        .title-art{
+            position: absolute;
+            top: -100px;
+
+            width: 1500px;
+
+            h3{
+                font-size: 120px;
+                
+                opacity: .2;
+            }
+        }
+        h3,p{
+            margin: 0;
+            padding: 0;
+        }
+        h3{
+            font-family: 'Unna', serif;
+            font-size: 70px;
+            margin-bottom: 30px;
+        }
+        p{
+            font-family: 'Sen', sans-serif;
+            font-size: 26px;
+        }
+        .p-grey{
+            margin-top: 10px;
+            color: #9F9F9F;
+        }
+    }
+
+}
