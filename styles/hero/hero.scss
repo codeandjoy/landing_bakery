@@ -12,6 +12,7 @@
     box-sizing: border-box;
 
     background-image: url('../../images/hero_image.jpg');
+    background-position: top center;
     background-size: cover;
 
     header{
@@ -66,6 +67,28 @@
                 color: #EE3226;
                 font-weight: bold;
             }
+
+            .btn-navmenu{
+                width: 30px;
+                height: 30px;
+
+                margin-right: 0 !important;
+
+                background-image: url('../../images/menu.svg');
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            // before open
+            .navmenu{
+                display: none;
+            }
+        }
+        #tablet-nav{
+            display: none;
+        }
+        #mobile-nav{
+            display: none;
         }
     }
     
@@ -122,6 +145,84 @@
 
             border: none;
             border-radius: 5px;
+        }
+    }
+}
+
+@media (max-width: 800px){
+       .hero-section{
+            padding: 50px 60px;
+
+            .hero-content-container{
+                .hero-content-logo{
+                    width: 130px;
+                    height: 120px;
+
+                    margin-bottom: 14px;
+                }
+                .hero-content-banner{
+                    width: 380px;
+                    height: 90px;
+
+                    margin-bottom: 5px;
+                }
+            }
+       }
+}
+
+@media (max-width: 600px){
+    .hero-section{
+        header{
+            #desktop-nav{
+                display: none;
+            }
+
+            #tablet-nav{
+                display: flex;
+                align-items: center;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .hero-section{
+        padding: 30px 50px;
+
+        .hero-content-container{
+            .hero-content-logo{
+                width: 26vw;
+                height: 26vw;
+
+                margin-bottom: 6px;
+            }
+            .hero-content-banner{
+                width: 76vw;
+                height: 18vw;
+            }
+
+            p{
+                width: 200px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px){
+    .hero-section{
+        padding: 30px;
+
+        header{
+            #tablet-nav{
+                display: none;
+            }
+
+            #mobile-nav{
+                display: flex;
+                align-items: center;
+             }
         }
     }
 }
