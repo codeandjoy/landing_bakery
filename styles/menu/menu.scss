@@ -33,7 +33,7 @@
             font-size: 50px;
         }
     }
-    .menu-items-container{
+    .menu-blocks-container{
         display: flex;
         gap: 150px;
 
@@ -75,7 +75,6 @@
                         color: #fff;
                         font-family: 'Unna', serif;
                         font-size: 24px;
-                        
                     }
                 }
             }
@@ -83,7 +82,97 @@
         .menu-block--mg{
             margin-top: -110px;
         }   
-        
-
     }
+}
+
+@media (max-width: 1400px){
+    .menu-section{
+        .menu-title-container{
+            margin-bottom: 40px;
+        }
+
+        .menu-blocks-container{
+            gap: 80px;
+
+            .menu-block{
+                .menu-block-title{
+                    width: 240px;
+                    height: 110px;
+
+                    margin-bottom: 5px;
+
+                    span{
+                        font-size: 30px;
+                    }
+                }
+
+                .menu-block-listing{
+                    gap: 10px;
+
+                    .entry{
+                        div span{
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1100px){
+    .menu-section{
+        .menu-title-container{
+            margin-bottom: 10px;
+        }
+
+        .menu-blocks-container{
+            justify-content: center;
+            flex-wrap: wrap;
+
+            gap: 20px 70px;
+
+            width: 600px;
+
+            .menu-block--mg{
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px){
+    .menu-section{
+        height: auto;
+        padding: 70px;
+        box-sizing: border-box;
+    
+        .menu-title-container{
+            margin-bottom: 20px;
+
+            .menu-title-logo{
+                width: 80px;
+                height: 70px;
+
+                margin-bottom: 2px;
+            }
+            span{
+                font-size: 40px;
+            }
+        }
+
+        .menu-blocks-container{
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: nowrap;
+
+            gap: 40px;
+
+            width: auto;
+        }
+    }
+}
+
+@media (max-width: 400px){
+
 }
