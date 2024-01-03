@@ -8,8 +8,8 @@
   padding: 50px 80px;
   box-sizing: border-box;
   background-image: url("../../images/hero_image.jpg");
-  background-position: 0% 50%;
-  background-size: 120%;
+  background-position: top center;
+  background-size: cover;
 }
 .hero-section header {
   position: absolute;

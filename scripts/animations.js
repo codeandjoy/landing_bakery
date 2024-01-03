@@ -13,10 +13,6 @@ gsap.from('.hero-content-container button', {
     scale: 1.2
 });
 
-gsap.from('.hero-section', {
-    backgroundPosition: "0% 40%"
-});
-
 
 
 ['.about-title-container', '.menu-title-container'].forEach(crown => {
