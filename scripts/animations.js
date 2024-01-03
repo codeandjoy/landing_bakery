@@ -71,9 +71,21 @@ aboutContenthps.forEach(p => {
 
 
 
-gsap.from(['.experience-text-art', '.experience-content-container h3'],{
+['.experience-img-container .img-title-text', '.accessible-img-container .img-title-text']
+.forEach(titleText => {
+    gsap.from(titleText, {
+        scrollTrigger: {
+            trigger: titleText,
+            start: 'top 80%',
+            end: 'bottom, 50%'
+        },
+        opacity: 0
+    });
+});
+
+gsap.from(['.experience-text-art', '.experience-content-container h3',],{
     scrollTrigger: {
-        trigger: '.experience-content-container h3',
+        trigger: '.experience-content-container',
         start: 'top 90%',
         end: 'bottom, 50%'
     },
@@ -85,7 +97,7 @@ gsap.from(['.experience-text-art', '.experience-content-container h3'],{
 const experienceps = gsap.utils.toArray('.experience-content-container p');
 gsap.from(experienceps, {
     scrollTrigger: {
-        trigger: '.experience-content-container h3',
+        trigger: '.experience-content-container',
         start: 'top 90%',
         end: 'bottom, 50%'
     },
@@ -99,7 +111,7 @@ gsap.from(experienceps, {
 
 gsap.from(['.accessible-text-art', '.accessible-content-container h3'],{
     scrollTrigger: {
-        trigger: '.accessible-content-container h3',
+        trigger: '.accessible-content-container',
         start: 'top 90%',
         end: 'bottom, 50%'
     },
@@ -111,7 +123,7 @@ gsap.from(['.accessible-text-art', '.accessible-content-container h3'],{
 const accessibleps = gsap.utils.toArray('.accessible-content-container p');
 gsap.from(accessibleps, {
     scrollTrigger: {
-        trigger: '.accessible-content-container h3',
+        trigger: '.accessible-content-container',
         start: 'top 90%',
         end: 'bottom, 50%'
     },
@@ -127,8 +139,8 @@ const menutitles = gsap.utils.toArray('.menu-block-title');
 menutitles.forEach(title => {
     gsap.from(title, {
         scrollTrigger: {
-            trigger: '.menu-title-container',
-            start: 'top 60%',
+            trigger: title,
+            start: 'top 80%',
             end: 'bottom, 50%'
         },
         opacity: 0
@@ -139,12 +151,12 @@ menutitles.forEach(title => {
     gsap.utils.toArray('.menu-block-1 .menu-block-listing .entry'),
     gsap.utils.toArray('.menu-block-2 .menu-block-listing .entry'),
     gsap.utils.toArray('.menu-block-3 .menu-block-listing .entry')
-].forEach(menuBlockEntries => {
+].forEach((menuBlockEntries, idx) => {
     gsap.from(menuBlockEntries, {
         scrollTrigger: {
-            trigger: '.menu-title-container',
-            start: 'top 60%',
-            end: 'bottom, 50%'
+            trigger: `.menu-block-${idx+1} .menu-block-title`,
+            start: 'top 70%',
+            end: 'bottom, 60%'
         },
         opacity: 0,
         y: 10,
@@ -160,8 +172,7 @@ gsap.from(['.visit-section-content-container .title-art', '.visit-section-conten
         start: 'top 70%',
         end: 'bottom, 60%'
     },
-    opacity: 0,
-    x: 100
+    opacity: 0
 });
 
 const visitps = gsap.utils.toArray('.visit-section-content-container p');
