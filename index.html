@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="./styles/visit/visit.css">
 </head>
 <body>
+    <div id="full-page-fade"></div>
+
     <div class="hero-section">
         <header>
             <div class="header-logo-container">
@@ -20,24 +22,24 @@
                 <span>KingBakery</span>
             </div>
             <nav id="desktop-nav">
-                <button type="button">About</button>
-                <button type="button">Menu</button>
-                <button type="button" class="btn-cta">Visit us!</button>
+                <button type="button" class="btn-about">About</button>
+                <button type="button" class="btn-menu">Menu</button>
+                <button type="button" class="btn-visit btn-cta">Visit us!</button>
             </nav>
             <nav id="tablet-nav">
-                <button type="button" class="btn-cta">Visit us!</button>
+                <button type="button" class="btn-visit btn-cta" id="t-btn-visit">Visit us!</button>
                 <button type="button" class="btn-navmenu"></button>
                 <div class="navmenu">
-                    <button type="button">About</button>
-                    <button type="button">Menu</button>
+                    <button type="button" class="btn-about">About</button>
+                    <button type="button" class="btn-menu">Menu</button>
                 </div>
             </nav>
             <nav id="mobile-nav">
                 <button type="button" class="btn-navmenu"></button>
                 <div class="navmenu">
-                    <button type="button">About</button>
-                    <button type="button">Menu</button>
-                    <button type="button" class="btn-cta">Visit us!</button>
+                    <button type="button" class="btn-about">About</button>
+                    <button type="button" class="btn-menu">Menu</button>
+                    <button type="button" class="btn-visit btn-cta">Visit us!</button>
                 </div>
             </nav>     
         </header>
@@ -49,11 +51,11 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <button type="button">Menu</button>
+            <button type="button" class="btn-menu">Menu</button>
         </div>
     </div>
 
-    <div class="about-section">
+    <div class="about-section" id="about-section">
         <div class="about-title-container">
             <div class="about-title-logo"></div>
             <span>About Us</span>
@@ -169,7 +171,7 @@
         </div>
     </div>
 
-    <div class="menu-section">
+    <div class="menu-section" id="menu-section">
         <div class="menu-title-container">
             <div class="menu-title-logo"></div>
             <span>Menu</span>
@@ -259,7 +261,7 @@
         </div>
     </div>
 
-    <div class="visit-section">
+    <div class="visit-section" id="visit-section">
         <div class="visit-section-logo"></div>
         <div class="visit-section-content-container">
             <div class="title-art">
@@ -279,5 +281,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollToPlugin.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
     <script src="./scripts/animations.js"></script>
+    <script src="./scripts/nav.js"></script>
 </body>
 </html>
