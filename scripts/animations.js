@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 gsap.from('.hero-content-logo', {
     opacity: .2,
     y: -10,
