@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>KingBakery</title>
 
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/hero/hero.css">
@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="./styles/experience_accessible/experience_accessible.css">
     <link rel="stylesheet" href="./styles/menu/menu.css">
     <link rel="stylesheet" href="./styles/visit/visit.css">
+
+    <link rel="preload" fetchpriority="high" as="image" href="/images/hero_image.jpg" type="image/svg+xml">
+    <link rel="preload" as="image" href="/images/logo_kb.svg" type="image/jpeg">
+    <link rel="preload" as="image" href="/images/banner.svg" type="image/jpeg">
+
+    <meta name="description" content="KingBakery landing page">
 </head>
 <body>
     <div id="full-page-fade"></div>
@@ -27,7 +33,7 @@
                 <button type="button" class="btn-visit btn-cta">Visit us!</button>
             </nav>
             <nav id="tablet-nav">
-                <button type="button" class="btn-visit btn-cta" id="t-btn-visit">Visit us!</button>
+                <button type="button" class="btn-visit btn-cta" id="t-btn-visit" aria-label="Menu">Visit us!</button>
                 <button type="button" class="btn-navmenu"></button>
                 <div class="navmenu">
                     <button type="button" class="btn-about">About</button>
@@ -35,7 +41,7 @@
                 </div>
             </nav>
             <nav id="mobile-nav">
-                <button type="button" class="btn-navmenu"></button>
+                <button type="button" class="btn-navmenu" aria-label="Menu"></button>
                 <div class="navmenu">
                     <button type="button" class="btn-about">About</button>
                     <button type="button" class="btn-menu">Menu</button>
